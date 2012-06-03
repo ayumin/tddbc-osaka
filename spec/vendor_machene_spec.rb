@@ -28,5 +28,10 @@ describe VendorMachene do
     vendor_machene = VendorMachene.new
     vendor_machene.throw(Money::GOSENEN).should == "failure"
   end
+  it "自販機にはお金を複数回投入できる" do
+    vendor_machene = VendorMachene.new
+    vendor_machene.throw(Money::JUUEN)
+    vendor_machene.throw(Money::JUUEN)
+  end
 end
 
