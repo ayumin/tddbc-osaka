@@ -24,5 +24,9 @@ describe VendorMachene do
     vendor_machene = VendorMachene.new
     vendor_machene.throw(Money::SENEN).should == "success"
   end
+  it "自動販売機には、5000円札は投入できない" do
+    vendor_machene = VendorMachene.new
+    vendor_machene.throw(Money::GOSENEN).should == "failure"
+  end
 end
 
