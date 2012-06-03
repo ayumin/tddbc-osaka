@@ -4,4 +4,5 @@ module Money
   HYAKUEN = 100
   GOHYAKUEN = 500
   SENEN = 1000
+  GOSENEN = 5000
 end
